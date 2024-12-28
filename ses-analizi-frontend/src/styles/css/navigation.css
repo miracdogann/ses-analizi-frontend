@@ -1,0 +1,125 @@
+/* Navigation bar genel stil */
+.navigation-bar {
+  /* position: fixed; */
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #1e1e2f; /* Koyu arka plan */
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Daha belirgin gölge */
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Logo kısmı */
+.nav-logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00d1b2; /* Canlı yeşil ton */
+  letter-spacing: 1.2px;
+  transition: color 0.3s ease;
+}
+
+.nav-logo a:hover {
+  color: #00bfa5; /* Hover durumunda daha koyu yeşil */
+}
+
+/* Linklerin düzeni */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.nav-links-left {
+  display: flex;
+  gap: 30px; /* Linkler arası boşluk */
+}
+
+.nav-links-left a {
+  text-decoration: none;
+  color: #e0e0f0; /* Açık gri */
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links-left a:hover {
+  color: #00d1b2;
+  transform: scale(1.05); /* Hover'da hafif büyüme efekti */
+}
+
+/* Çıkış Yap butonu */
+.nav-links-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout-button {
+  background-color: transparent;
+  color: #e0e0f0;
+  border: 1px solid #00d1b2;
+  padding: 8px 18px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #00d1b2;
+  color: #1e1e2f; /* Koyu arka plan ile kontrast */
+  transform: scale(1.05);
+}
+
+/* Responsive Tasarım */
+
+/* Tablet ve küçük ekranlar */
+@media (max-width: 768px) {
+  .navigation-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .logout-button {
+    align-self: flex-start;
+    margin-top: 10px;
+    width: 100%; /* Mobilde tam genişlik */
+  }
+}
+
+/* Mobil cihazlar */
+@media (max-width: 480px) {
+  .navigation-bar {
+    padding: 10px 15px;
+  }
+
+  .nav-logo a {
+    font-size: 1.5rem;
+  }
+
+  .nav-links-left a {
+    font-size: 1.1rem;
+  }
+
+  .logout-button {
+    font-size: 1rem;
+  }
+}

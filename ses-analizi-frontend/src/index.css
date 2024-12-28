@@ -1,0 +1,13 @@
+#root {
+    background-color: #1e1e2fed;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
+    /* display: flex; */
+    /* position: relative; */
+    /* Flexbox ekleniyor */
+    /* justify-content: center; */
+    /* Yatayda ortala */
+    /* align-items: center; */
+    /* Dikeyde ortala */
+}

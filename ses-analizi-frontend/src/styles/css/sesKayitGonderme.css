@@ -1,0 +1,159 @@
+/* Kapsayıcı */
+#sesKayitGonderme {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Açık yazı rengi */
+    background-color: #1e1e2f; /* Derin koyu arka plan */
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Hover için animasyon efekti */
+#sesKayitGonderme:hover {
+    transform: scale(1.03);
+}
+
+/* Başlık */
+#sesKayitGonderme h2 {
+    text-align: center;
+    color: #f1f1f1; /* Açık gri başlık rengi */
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Butonlar */
+#sesKayitGonderme button {
+    display: inline-block;
+    margin: 12px 0;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Buton renk tonları */
+#sesKayitGonderme button:first-child {
+    background: linear-gradient(45deg, #4caf4f, #66bb6a); /* Yeşil tonları */
+    color: #ffffff;
+}
+
+#sesKayitGonderme button:first-child:hover {
+    background: linear-gradient(45deg, #66bb6a, #4caf50);
+    transform: scale(1.05);
+}
+
+#sesKayitGonderme button:nth-child(2) {
+    background: linear-gradient(45deg, #ff5722, #ff7043); /* Turuncu tonları */
+    color: #ffffff;
+}
+
+#sesKayitGonderme button:nth-child(2):hover {
+    background: linear-gradient(45deg, #ff7043, #ff5722);
+    transform: scale(1.05);
+}
+
+#sesKayitGonderme button:nth-child(3) {
+    background: linear-gradient(45deg, #3f51b510, #5c6bc0); /* Mavi tonları */
+    color: #ffffff;
+}
+
+#sesKayitGonderme button:nth-child(3):hover {
+    background: linear-gradient(45deg, #5c6bc0, #3f51b5);
+    transform: scale(1.05);
+}
+
+#sesKayitGonderme button:last-child {
+    background: linear-gradient(45deg, #00bcd4, #26c6da); /* Turkuaz tonları */
+    color: #ffffff;
+}
+
+#sesKayitGonderme button:last-child:hover {
+    background: linear-gradient(45deg, #26c5da68, #00bcd4);
+    transform: scale(1.05);
+}
+
+#sesKayitGonderme button:disabled {
+    background: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Ses kaydını görüntüle */
+#sesKayitGonderme audio {
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #444;
+    border-radius: 12px;
+    background: #2e2e3e; /* Koyu tema uyumu */
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Kayıt yapılmadığında mesaj */
+#sesKayitGonderme p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #b0b0b0;
+}
+
+/* Analiz butonu */
+#sesKayitGonderme button:last-child {
+    background: linear-gradient(45deg, #00bcd4, #26c6da); /* Turkuaz tonları */
+}
+
+#sesKayitGonderme button:last-child:hover {
+    background: linear-gradient(45deg, #26c6da, #00bcd4);
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    #sesKayitGonderme {
+        padding: 30px;
+    }
+
+    #sesKayitGonderme h2 {
+        font-size: 30px;
+    }
+
+    #sesKayitGonderme button {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #sesKayitGonderme {
+        padding: 15px;
+    }
+
+    #sesKayitGonderme h2 {
+        font-size: 24px;
+    }
+
+    #sesKayitGonderme button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    #sesKayitGonderme audio {
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homePage {
+    background-color: #1E1E2F;
+    border-radius: 40px;
+    padding: 40px 0; /* padding eklendi */
+    border: solid #02C9AB 2px;
+    /* margin-top: 10%; */
+}
+
+.homePage.container {
+    max-width: 1000px;
+    margin-top: 8%;
+    
+}
+
+.col-md-6,
+.col-sm-12 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Görsel */
+.voice-img {
+    max-width: 100%;
+    height: auto;
+    animation: scaleUp 1s ease-in-out;
+}
+
+/* Başlık ve İçerik */
+.HomePageTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ana .row {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 15px;
+    color: white;
+    opacity: 0;
+    animation: fadeInRow 1s ease-in-out forwards;
+    /* background-color: aqua; */
+    justify-content: center;
+    padding: 5px;
+    transition: all .2s ease-in;
+}
+
+.ana .row:not(:first-child):hover {
+    background-color: rgb(249, 246, 246);
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.row:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.row:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.row:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.row:nth-child(4) {
+    animation-delay: 2s;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRow {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+

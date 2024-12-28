@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E2F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.duygu-analizi {
+    background: linear-gradient(135deg, #2E2E46, #1E1E2F);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.duygu-analizi h2 {
+    font-size: 2.4rem;
+    color: #F1F1F1;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+.duygu-analizi h3 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    color: #F1F1F1;
+}
+
+.duygu-analizi ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.duygu-analizi li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #3C3C59;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.duygu-analizi li:hover {
+    transform: scale(1.05);
+    background-color: #4c4c721b;
+}
+
+.duygu-analizi label {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.duygu-analizi input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.duygu-analizi button {
+    background-color: #FF6F61;
+    color: white;
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.duygu-analizi button:hover {
+    background-color: #FF5A4A;
+    transform: scale(1.05);
+}
+
+.ses-metni {
+    background-color: #2E2E46;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #EDEDED;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.texten-duygu-sonuclari {
+    margin-top: 30px;
+    display: flex;
+    justify-content: safe;
+    flex-wrap: column;
+    gap: 20px;
+}
+
+.texten-duygu-sonuclari li {
+    background-color: #3c3c5953;
+    padding: 15px 30px;
+    border-radius: 42px;
+    font-size: 1.3rem;
+    flex-basis: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.texten-duygu-sonuclari li:hover {
+    transform: scale(1.45);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .duygu-analizi {
+        padding: 20px;
+    }
+
+    .duygu-analizi h2 {
+        font-size: 2rem;
+    }
+
+    .duygu-analizi h3 {
+        font-size: 1.4rem;
+    }
+
+    .duygu-analizi button {
+        font-size: 1rem;
+    }
+
+    .texten-duygu-sonuclari {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .texten-duygu-sonuclari li {
+        flex-basis: 100%;
+    }
+}

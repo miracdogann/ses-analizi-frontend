@@ -1,0 +1,57 @@
+/* Görsel Galerisi */
+.grafik-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.grafik-container .grafik-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    width: 650px;
+    height: 400px;
+    padding: 20px;
+}
+
+.grafik-container .grafik-item img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.grafik-container .grafik-item:hover img {
+    transform: scale(1.1);
+}
+
+.grafik-container .grafik-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.grafik-container .grafik-item:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grafik-container .grafik-item:hover:after {
+    opacity: 1;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    #sesAnaliziContainer .grafik-container .grafik-item {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+    }
+}
